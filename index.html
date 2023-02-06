@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="AluCar é uma empresa com foco em facilitar seus passeios com carros confortavel e bonito para aproveitar o máximo
+    seu passeio! Aqui na AluCar você consegue alugar um carro confortavel, bonito e que a diária caiba no seu bolso.">
+    <link rel="shortcut icon" href="assets/icons/icon-nav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css?v0.5.6.1">
+    <link rel="stylesheet" href="css/responsive.css?v0.5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>AluCar - Seu aluguel de veículos</title>
+</head>
+<body>
+    <header id="topo">
+        <div class="container">
+            <div class="flex-topo">
+                <a href="index.html"><img src="assets/logos/logo-alucar.svg" alt="Logo AluCar" title="Logo AluCar"></a>
+                <div class="menu-desktop">
+                    <nav>
+                        <ul>
+                            <li><a href="#beneficios">BENEFÍCIOS</a></li>
+                            <li><a href="#carros">CARROS</a></li>
+                            <li><a href="#app">NOSSO APP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-mobile">
+                    <img src="assets/icons/menu-hamburguer.svg" alt="menu mobile"  id="menu">
+                    <div id="links-menu" hidden>
+                        <nav>
+                            <ul>
+                                <li><a href="#beneficios">BENEFÍCIOS</a></li>
+                                <li><a href="#carros">CARROS</a></li>
+                                <li><a href="#app">NOSSO APP</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <main>
+        <section class="bg">
+            <div class="container ">
+                <div class="bg-content">
+                    <div class="texto-branco bg-beneficio">
+                        <h1>Aluguel de Carros</h1>
+                        <div class="content-check">
+                            <div class="check-beneficio">
+                                <img src="assets/icons/icon-verificado.svg">
+                                <p>Cancelamento grátis na maioria das reservas</p>
+                            </div>
+                            <div class="check-beneficio">
+                                <img src="assets/icons/icon-verificado.svg">
+                                <p>Atendimento ao cliente 24/7 no que precisar</p>
+                            </div>
+                            <div class="check-beneficio">
+                                <img src="assets/icons/icon-verificado.svg">
+                                <p>Mais de 30 lojas em todo país bem localizadas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <form action="https://formsubmit.co/meusprojetosabismo@gmail.com" method="POST">
+
+                            <input type="hidden" name="_subject" value="Dados do Alucar">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Agradecemos seu contato e em breve responderemos. Nosso tempo médio de resposta é de até 1 dia útil.">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_next" value="https://alucar.abismodev.com/">
+
+                            <div class="input-wrapper lupa">
+                                <label for="">Local e Retirada</label>
+                                <input type="text" name="local_retirada" placeholder="Local de Retirada" required>
+                                <img src="assets/icons/icon-lupa.svg">
+                            </div>
+
+                            <div class="form-w50">
+                                <div class="input-wrapper w50-input calendario">
+                                    <label for="">Data de Retirada</label>
+                                    <input type="date" name="data_retirada" required>
+                                    <img src="assets/icons/icon-calendario.svg">
+                                </div>
+                                <div class="input-wrapper w50-input relogio">
+                                    <label for=""> Hora de Reitrada</label>
+                                    <input type="time" min="09:00" max="16:00" name="hora_retirada" required>
+                                    <img src="assets/icons/icon-relogio.svg">
+                                </div>
+                            </div>
+
+                            <div class="form-w50">
+                                <div class="input-wrapper w50-input calendario">
+                                    <label for="">Data de Devolução</label>
+                                    <input type="date" name="data_devolucao" required>
+                                    <img src="assets/icons/icon-calendario.svg">
+                                </div>
+                                <div class="input-wrapper w50-input relogio">
+                                    <label for="">Hora de Devolução</label>
+                                    <input type="time" name="hora_devolucao" min="09:00" max="16:00" required>
+                                    <img src="assets/icons/icon-relogio.svg">
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper whatsapp">
+                                <label for="">Telefone</label>
+                                <input type="tel" name="telefone" placeholder="Telefone" required>
+                                <img src="assets/icons/icon-zap.svg">
+                            </div>
+
+                            <div class="button-bg">
+                                <button type="submit">Enviar Dados</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cinza espacamento-interno">
+            <div class="container">
+                <div class="content-marcas">
+                    <h2>Marca dos nossos carros</h2>
+                    <div class="marcas">
+                        <div><img src="assets/logos/logo-hyundai.png" alt="Logo da Hyundai"></div>
+                        <div><img class="bmw" src="assets/logos/logo-bmw.png" alt="Logo da BMW"></div>
+                        <div><img src="assets/logos/logo-honda.png" alt="Logo da Honda"></div>
+                        <div><img src="assets/logos/logo-ford.png" alt="Logo da Ford"></div>
+                        <div><img src="assets/logos/logo-jeep.png" alt="Logo da Jeep"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-azul-escuro espacamento-interno" id="beneficios">
+            <div class="container">
+                <div class="content-beneficios">
+                    <h2>Alguns de nossos Benefícios</h2>
+                    <div class="secao-cards">
+                        <div class="cards">
+                            <h3>Aluguéis Flexíveis</h3>
+                            <p>Você pode cancelar ou alterar a maioria das reservas gratuitamente até 48 horas antes da retirada.</p>
+                        </div>
+
+                        <div class="cards">
+                            <h3>Sem taxas ocultas</h3>
+                            <p>Conosco você sabe exatamente pelo que está pagando e com o conforto que você merece.</p>
+                        </div>
+
+                        <div class="cards">
+                            <h3>Cobrimos o menor preço</h3>
+                            <p>Encontrou a mesma oferta por um preço menor?<br>Nós cobrimos o menor preço.</p>
+                        </div>
+                    </div>
+
+                    <div class="paragrafo-cards texto-branco">
+                        <p>*Todos os nossos veículos são usados, porém todos são higienizados após o uso dos clientes afim de garantir a saúde do
+                            cliente e a satisfação com 100% do uso de nossos serviços.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cinza espacamento-interno" id="carros">
+            <div class="container">
+                <div class="content-carros">
+                    <h2>Veja nossos Carros</h2>
+                    <div class="content-cards">
+                        <div class="cards-carros">
+                            <div class="carro-container"><img class="carro" src="assets/img/mustang.png" alt="Foto de um Mustang GT 500 da Ford"></div>
+                            <div class="secao-descricao">
+                                <h4>Mustang GT 500</h4>
+                                <div class="content-descricao">
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-mala.svg">
+                                        <p>Porta malas médio 30kg</p>
+                                    </div>
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-cadeira.svg">
+                                        <p>Espaço para até 5 pessoas</p>
+                                    </div>
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-carteira.svg">
+                                        <p>Diárias de <strong>R$87,90*</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-carros">
+                            <div class="carro-container"><img class="carro" src="assets/img/renegade.png" alt="Foto de um Jeep Renegade da Jeep"></div>
+                            <div class="secao-descricao">
+                                <h4>Jeep Renegade</h4>
+                                <div class="content-descricao">
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-mala.svg">
+                                        <p>Porta malas médio 56kg</p>
+                                    </div>
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-cadeira.svg">
+                                        <p>Espaço para até 5 pessoas</p>
+                                    </div>
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-carteira.svg">
+                                        <p>Diárias de <strong>R$96,32*</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-carros">
+                            <div class="carro-container"><img class="carro" src="assets/img/honda_civic.png" alt="Foto de um Honda Civic 2022"></div>
+                            <div class="secao-descricao">
+                                <h4>Honda Civic 2022</h4>
+                                <div class="content-descricao">
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-mala.svg">
+                                        <p>Porta malas médio 40kg</p>
+                                    </div>
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-cadeira.svg">
+                                        <p>Espaço para até 5 pessoas</p>
+                                    </div>
+                                    <div class="descricao">
+                                        <img src="assets/icons/icon-carteira.svg">
+                                        <p>Diárias de <strong>R$80,78*</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paragrafo-cards texto-azul-escuro">
+                        <p>*Valores das diárias podem ser alteradas de acordo com a taxa cambial do atual momento de contratação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-azul-escuro texto-branco espacamento-interno">
+            <div class="container">
+                <div class="cta">
+                    <p>Temos mais de 30 lojas muito bem localizadas em aeroportos e rodoviárias para sua facilidade</p>
+                    <a href="#topo">Quero Alugar</a>
+                </div>
+            </div>
+        </section>
+        <section class="secao-app" id="app">
+            <div class="container">
+                <div class="content-app">
+                    <div class="img-app">
+                        <img src="assets/img/celular.png" alt="Foto do nosso aplicativo AluCar">
+                    </div>
+                    <div class="descricao-app texto-branco">
+                        <p>
+                            Baixe nosso aplicativo de forma gratuita para ter mais praticidade. Com nosso aplicativo você pode alugar nossos veículos, visualizar os
+                            dias restantes dos veículos contratados, mais informação de cada veículo e um suporte muito mais rápido.
+                        </p>
+                        <div class="icon-download">
+                            <a href="#"><img src="assets/icons/icon-google-play.svg" alt="Disponível no Google Play"></a>
+                            <a href="#"><img src="assets/icons/icon-app-store.svg" alt="Disponível na App Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cinza espacamento-interno">
+            <div class="container">
+                <div class="content-newlestter">
+                    <p>
+                        Quer receber descontos exclusivos ou novidades em nossos serviços? <br>
+                        Inscreva-se na nossa Newlestter para não perder nada.
+                    </p>
+                    <div class="form-newlestter">
+                        <form action="https://formsubmit.co/meusprojetosabismo@gmail.com" method="POST">
+
+                            <input type="hidden" name="_subject" value="Dados da Newlestter">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Agradecemos seu interesse em nossos serviços, por isso tome esse cupom de 15%  ALU15">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_next" value="https://alucar.abismodev.com/">
+
+                            <div class="form-newlestter-input">
+                                <input type="text" name="nome" placeholder="Nome">
+                                <input type="email" name="email" placeholder="E-mail" required>
+                            </div>
+                            <button type="submit">CADASTRAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="content-rodape"> <!--sepação para as 3 colunas-->
+                <div class="coluna"> <!--coluna 1-->
+                    <div class="menu-rodape">
+                        <h3>MENU</h3>
+                        <nav>
+                            <ul>
+                                <a href="#beneficios"><li>BENEFÍCIOS</li></a>
+                                <a href="#carros"><li>CARROS</li></a>
+                                <a href="#app"><li>NOSSO APP</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="menu-rodape">
+                        <h3>NOSSOS TERMOS</h3>
+                        <nav>
+                            <ul>
+                                <a href="#"><li>TERMOS DE USO</li></a>
+                                <a href="#"><li>TERMOS DE PRIVACIDADE</li></a>
+                                <a href="#"><li>TERMOS DE CANCELAMENTO</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="coluna"> <!--coluna 2-->
+                    <div class="menu-rodape">
+                        <h3>CONTATO</h3>
+                        <div>
+                            <p><a href="tel:+08000318000">0800 031 8000</a></p>
+                            <p><a href="tel:+32999999999">(32) 99999-9999</a></p>
+                            <p><a href="mailto: contato@alucar.com">CONTATO@ALUCAR.COM</a></p>
+                        </div>
+                    </div>
+                    <div class="menu-rodape">
+                        <h3>NOSSAS REDES SOCIAIS</h3>
+                        <div class="icon-sociais">
+                            <img src="assets/icons/icon-twitter.svg">
+                            <img src="assets/icons/icon-instagram.svg">
+                            <img src="assets/icons/icon-linkedin.svg">
+                            <img src="assets/icons/icon-facebook.svg">
+                            <img src="assets/icons/icon-youtube.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coluna-3"> <!--coluna 3-->
+                    <div class="menu-rodape">
+                        <h3>NEWLESTTER</h3>
+                        <div class="form-rodape">
+                            <form action="https://formsubmit.co/meusprojetosabismo@gmail.com" method="POST">
+
+                                <input type="hidden" name="_subject" value="Dados da Newlestter">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_autoresponse" value="Agradecemos seu interesse em nossos serviços, por isso tome esse cupom de 15%  ALU15">
+                                <input type="hidden" name="_template" value="box">
+                                <input type="hidden" name="_next" value="https://alucar.abismodev.com/">
+
+                                <input type="text" name="nome" placeholder="Nome">
+                                <input type="email" name="email" placeholder="E-mail" required>
+                                <button type="submit">CADASTRAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="creditos">
+                <p>Site desenvolvido com <img src="assets/icons/icon-coracao.svg" alt="amor" title="Amor"> por <a href="https://www.instagram.com/abismodev_" target="_blank">AbismoDev</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let link_menu = document.getElementById('links-menu');
+        let menu = document.getElementById('menu').addEventListener('click', () =>{
+            link_menu.toggleAttribute('hidden');
+        });
+    </script>
+</body>
+</html>

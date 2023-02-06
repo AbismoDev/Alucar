@@ -1,0 +1,212 @@
+@media (max-width: 768px) {
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #links-menu{
+        background-color: #004A74;
+        position: absolute;
+        top: 20px;
+        left: -107px;
+    }
+    
+    .menu-mobile li{
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #003a5c;
+    }
+    
+    .menu-mobile ul{
+        list-style: none;
+    }
+
+    .bg{
+        align-items: flex-start;
+        height: 430px;
+    }
+
+    .bg-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        margin-top: 20px;
+    }
+
+    .bg-beneficio{
+        display: none;
+    }
+
+   .form{
+        width: 100%;
+    }
+
+    .bg-beneficio h1{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .content-check{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .check-beneficio{
+        width: 350px;
+    }
+
+    .check-beneficio p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .form{
+        justify-content: center;
+    }
+
+    .form form{
+        top: 20px;
+        width: 60%;
+    }
+
+    .cta p{
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .secao-app{
+        display: flex;
+        align-items: center;
+        height: 350px;
+    }
+
+    .content-app{
+        justify-content: center;
+    }
+
+    .img-app{
+        display: none;
+    }
+
+    .descricao-app{
+        width: 90%;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .descricao-app p{
+        font-size: 22px;
+    }
+
+    .icon-download img{    
+        width: 150px;
+    }
+    
+    .content-newlestter p{
+        width: 50%;
+        font-size: 20px;
+    }    
+
+    .form-newlestter{
+        width: 40%;
+    }
+
+    .coluna-3{
+        display: none;
+    }
+
+    .creditos{
+        text-align: center;
+    }
+}
+
+@media (max-width: 560px){
+    .bg{        
+        background-image: none;
+        background-color: #0092E4;
+    }
+
+    .form form{
+        width: 90%;
+    }
+
+    .cta{
+        justify-content: none;
+        flex-wrap: none;
+        flex-direction: column;
+    }
+
+    .cta p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta a{
+        margin-top: 20px;
+    }
+
+    .descricao-app p{
+        font-size: 18px;
+    }
+
+    .icon-download{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .icon-download img{
+        width: 120px;
+    }
+
+    .content-newlestter{
+        justify-content: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-newlestter p{
+        width: 90%;
+        text-align: center;
+    }
+
+    .form-newlestter{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .content-rodape{
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        padding: 0 2%;
+    }
+
+    .menu-rodape h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px){
+    .bg{
+        align-items: flex-start;
+        height: 600px;
+    }
+
+    .w50-input{
+        width: 100%;
+    }
+    
+    .form-w50{
+        flex-direction: column;
+        justify-content: none;
+    }
+}
