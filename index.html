@@ -8,7 +8,7 @@
     <meta name="description" content="AluCar é uma empresa com foco em facilitar seus passeios com carros confortavel e bonito para aproveitar o máximo
     seu passeio! Aqui na AluCar você consegue alugar um carro confortavel, bonito e que a diária caiba no seu bolso.">
     <link rel="shortcut icon" href="assets/icons/icon-nav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css?v0.5.6.1">
+    <link rel="stylesheet" href="css/style.css?v0.5.6.2">
     <link rel="stylesheet" href="css/responsive.css?v0.5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,7 +84,7 @@
                             <div class="form-w50">
                                 <div class="input-wrapper w50-input calendario">
                                     <label for="">Data de Retirada</label>
-                                    <input type="date" name="data_retirada" required>
+                                    <input type="date" name="data_retirada" max="2999-12-31" required>
                                     <img src="assets/icons/icon-calendario.svg">
                                 </div>
                                 <div class="input-wrapper w50-input relogio">
@@ -97,7 +97,7 @@
                             <div class="form-w50">
                                 <div class="input-wrapper w50-input calendario">
                                     <label for="">Data de Devolução</label>
-                                    <input type="date" name="data_devolucao" required>
+                                    <input type="date" name="data_devolucao" max="2999-12-31" required>
                                     <img src="assets/icons/icon-calendario.svg">
                                 </div>
                                 <div class="input-wrapper w50-input relogio">
@@ -109,7 +109,9 @@
 
                             <div class="input-wrapper whatsapp">
                                 <label for="">Telefone</label>
-                                <input type="tel" name="telefone" placeholder="Telefone" required>
+                                <input type="tel" name="telefone" placeholder="(99) 99999-9999" 
+                                pattern="^\(\d{2}\)\d{4,5}-\d{4}$" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                maxlength="11" required>
                                 <img src="assets/icons/icon-zap.svg">
                             </div>
 
